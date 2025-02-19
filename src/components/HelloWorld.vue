@@ -41,19 +41,67 @@ export default {
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
-h3 {
-  margin: 40px 0 0;
+<style >
+/* General Reset */
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
 }
-ul {
-  list-style-type: none;
+
+/* Navbar Styling */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background-color: #333;
+  color: white;
+}
+
+.logo a {
+  font-size: 1.5rem;
+  color: #42b983;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+  margin: 0;
   padding: 0;
 }
-li {
-  display: inline-block;
-  margin: 0 10px;
+
+.nav-links li a {
+  text-decoration: none;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 5px;
+  transition: background-color 0.3s, color 0.3s;
 }
+
+.nav-links li a:hover {
+  background-color: #42b983;
+  color: white;
+}
+
+/* Content Styling */
+.content {
+  text-align: center;
+  padding: 50px 20px;
+}
+
+h1 {
+  color: #333;
+}
+
 a {
   color: #42b983;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
 }
 </style>
